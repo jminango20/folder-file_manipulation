@@ -28,6 +28,10 @@ public class Program {
 			System.out.println(file);
 		}
 		
+		//Criando un folder
+		boolean success = new File(strPath + "\\subdir").mkdir();
+		System.out.println("Directory created successfully: " + success);
+		
 		
 		
 		sc.close();
