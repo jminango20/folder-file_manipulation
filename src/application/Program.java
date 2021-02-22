@@ -21,6 +21,13 @@ public class Program {
 			System.out.println(folder);
 		}
 		
+		//Imprime Files
+		File[] files = path.listFiles(File::isFile);
+		System.out.println("FILES: ");
+		for(File file:files) {
+			System.out.println(file);
+		}
+		
 		
 		
 		sc.close();
